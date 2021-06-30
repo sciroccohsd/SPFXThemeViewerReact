@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "spfx-theme-viewer-react-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/spfxThemeViewerReact/SpfxThemeViewerReactWebPart.js",
+          "manifest": "./src/webparts/spfxThemeViewerReact/SpfxThemeViewerReactWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "SpfxThemeViewerReactWebPartStrings": "lib/webparts/spfxThemeViewerReact/loc/{locale}.js"
+  }
+}
