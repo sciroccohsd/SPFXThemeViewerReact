@@ -38,7 +38,7 @@ export default class SpfxThemeViewerReact extends React.Component<ISpfxThemeView
         return (
             <div className={styles.spfxThemeViewerReact}>
                 <div className={ styles.warning }>NOTE: Not all theme names are available to every SPO theme set.</div>
-                <div>Example: background-color: "[theme: bodyBackground, default:#ffffff]";</div>
+                <div>Example: {'{'} background-color: "[theme: bodyBackground, default:#ffffff]"; {'}'}</div>
                 <div>Theme values from: window.__themeState__.theme</div>
                 {
                     links.map( link => (
