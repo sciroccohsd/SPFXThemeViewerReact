@@ -62,7 +62,10 @@ export default class SpfxThemeViewerReact extends React.Component<ISpfxThemeView
             <div className={ styles.boxWrapper }>
                 <div>{ name }</div>
                 <div className={ styles.box } style={ {backgroundColor: value} }></div>
-                <div className={ styles.display }>{ name } : { value }</div>
+                <div className={ styles.display }>
+                    { name } : { value }
+                    <div className={styles.themeText}>{`"[theme: ${name}, default:${value}]"`}</div>
+                </div>
             </div>
         );
     }
